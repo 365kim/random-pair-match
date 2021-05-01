@@ -2,9 +2,9 @@ const crewObj = {
   곤이: { didTrio: true, prevPairs: ['체프', '카일', '썬', '유조', '심바', '디토', '엘라'] },
   그루밍: { didTrio: true, prevPairs: ['엘라', '파노', '인치', '브랜', '심바', '피터', '인치'] },
   도비: { didTrio: false, prevPairs: ['주모', '콜린', '서니', '카일', '브콜', '체프'] },
-  동동: { didTrio: false, prevPairs: [] },
+  동동: { didTrio: false, prevPairs: ['심바', '브랜', '주모', '하루', '유조', '카일'] },
   디토: { didTrio: true, prevPairs: ['인치', '크리스', '하루', '신세한탄', '썬', '곤이', '엘라'] },
-  미키: { didTrio: false, prevPairs: [] },
+  미키: { didTrio: false, prevPairs: ['파노', '피터', '크리스', '주모', '카일', '브콜'] },
   브랜: { didTrio: true, prevPairs: ['카일', '동동', '유조', '그루밍', '심바', '지그', '서니'] },
   브콜: { didTrio: true, prevPairs: ['크리스', '엘라', '티케', '썬', '도비', '미키'] },
   서니: { didTrio: false, prevPairs: ['티케', '체프', '도비', '지그', '신세한탄', '브랜'] },
@@ -14,7 +14,7 @@ const crewObj = {
   엘라: { didTrio: true, prevPairs: ['그루밍', '브콜', '파노', '카일', '티케', '곤이', '디토'] },
   인치: { didTrio: true, prevPairs: ['디토', '그루밍', '콜린', '파노', '크리스'] },
   유조: { didTrio: false, prevPairs: ['하루', '심바', '브랜', '곤이', '동동', '티케'] },
-  주모: { didTrio: false, prevPairs: [] },
+  주모: { didTrio: false, prevPairs: ['도비', '신세한탄', '동동', '미키', '하루', '크리스'] },
   지그: { didTrio: false, prevPairs: ['피터', '티케', '심바', '서니', '브랜', '콜린'] },
   체프: { didTrio: false, prevPairs: ['곤이', '서니', '피터', '파노', '엘라', '도비'] },
   카일: { didTrio: true, prevPairs: ['브랜', '곤이', '파노', '엘라', '도비', '미키', '동동'] },
@@ -42,7 +42,6 @@ const getDuo = (crewList) => {
 
     if (cannotBePair(...duo)) continue;
     removeFromList(crewList, duo);
-    console.log('2인 페어', duo);
     return duo;
   }
   return [];
@@ -58,7 +57,6 @@ const getTrio = (crewList) => {
     trio.push(crewToAdd);
     if (trio.length === 3) {
       removeFromList(crewList, trio);
-      console.log('3인 페어', trio);
       return trio;
     }
   }
@@ -79,7 +77,10 @@ const getNewPairSet = () => {
 
       if (duo.length !== 2) break;
       newPairSet.push(duo);
-      if (newPairSet.length === 12) return newPairSet;
+      if (newPairSet.length === 12) {
+        newPairSet.forEach((pair) => console.log(pair));
+        return;
+      }
     }
   }
 };
