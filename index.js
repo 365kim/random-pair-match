@@ -55,9 +55,7 @@ const getTrio = (crewList) => {
   const trio = [];
 
   for (let crewToAdd of crewList) {
-    if (cannotDoTrio(crewToAdd) || trio.some((trioMember) => cannotBePair(trioMember, crewToAdd))) {
-      continue;
-    }
+    if (cannotDoTrio(crewToAdd) || trio.some((trioMember) => cannotBePair(trioMember, crewToAdd))) continue;
     trio.push(crewToAdd);
     if (trio.length === 3) {
       removeFromList(crewList, trio);
