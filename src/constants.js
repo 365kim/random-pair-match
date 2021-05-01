@@ -61,7 +61,7 @@ export const crewObj = {
   },
   엘라: {
     didTrio: true,
-    prevPairs: ['그루밍', '브콜', '파노', '카일', '티케', '곤이', '디토'],
+    prevPairs: ['그루밍', '브콜', '파노', '카일', '티케', '체프', '곤이', '디토'],
     img: 'https://avatars.githubusercontent.com/u/43339385?v=4',
   },
   유조: {

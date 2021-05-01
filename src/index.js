@@ -16,7 +16,7 @@ class App extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.showResult();
-    }, 3000);
+    }, 4500);
   }
 
   render() {
