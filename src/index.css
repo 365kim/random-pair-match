@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 20rem;
+  align-items: center;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App__Header {
+  margin-bottom: 0;
+}
+
+.PairList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  justify-items: center;
+}
+
+.Pair {
+  display: flex;
+  margin: 4rem;
+}
+
+.Crew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.Crew__Image {
+  width: 4.5vw;
+  border-radius: 50%;
+}
+
+.Crew__Name {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
 }
