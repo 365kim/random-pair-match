@@ -1,7 +1,7 @@
 import Lottie from 'react-lottie';
 import { getNewPairSet } from './service';
 import animationData from './animation';
-import { crewObj } from './constants';
+import { crewObj } from './crewPairLogs';
 
 export const Animation = () => {
   return <Lottie options={{ animationData, loop: true }} width="50vw" />;
