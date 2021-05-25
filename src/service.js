@@ -46,10 +46,11 @@ export const getNewPairSet = () => {
     const shuffledCrewList = shuffle(activeCrewList);
     const newPairSet = [];
 
-    if (isOddNumber(activeCrewList)) {
+    if (isOddNumber(activeCrewList.length)) {
+      console.log('hi');
       const trio = getTrio(shuffledCrewList);
-
       if (trio.length !== 3) continue;
+      console.log(trio);
       newPairSet.push(trio);
     }
 
