@@ -135,7 +135,7 @@ export const crewObj = {
     img: 'https://avatars.githubusercontent.com/u/57053577?v=4',
   },
   콜린: {
-    isActive: true,
+    isActive: false,
     studyTrioCount: 1,
     prevMissionPairs: ['썬', '도비', '신세한탄', '인치', '티케', '지그', '서니'],
     prevStudyPairs: ['카일', '지그', '그루밍', '하루', '유조', '피터', '디토', '브랜'],

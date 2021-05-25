@@ -47,10 +47,9 @@ export const getNewPairSet = () => {
     const newPairSet = [];
 
     if (isOddNumber(activeCrewList.length)) {
-      console.log('hi');
       const trio = getTrio(shuffledCrewList);
+
       if (trio.length !== 3) continue;
-      console.log(trio);
       newPairSet.push(trio);
     }
 
