@@ -30,7 +30,7 @@ export const crewObj = {
     img: 'https://avatars.githubusercontent.com/u/52202474?v=4',
   },
   서니: {
-    isActive: true,
+    isActive: false,
     studyTrioCount: 0,
     prevMissionPairs: ['티케', '체프', '도비', '지그', '신세한탄', '브랜', '콜린'],
     prevStudyPairs: ['크리스', '곤이'],
