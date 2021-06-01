@@ -9,7 +9,7 @@ export const crewObj = {
     img: 'https://avatars.githubusercontent.com/u/59409762?v=4',
   },
   도비: {
-    isActive: true,
+    isActive: false,
     studyTrioCount: 1,
     prevMissionPairs: ['주모', '콜린', '서니', '카일', '브콜', '체프', '엘라'],
     prevStudyPairs: ['디토', '곤이', '그루밍', '체프', '크리스', '썬', '카일', '유조', '피터'],
