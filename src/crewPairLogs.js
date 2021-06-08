@@ -23,7 +23,7 @@ export const crewObj = {
     img: 'https://avatars.githubusercontent.com/u/64782636?v=4',
   },
   브랜: {
-    isActive: true,
+    isActive: false,
     studyTrioCount: 1,
     prevMissionPairs: ['카일', '동동', '유조', '그루밍', '심바', '지그', '서니', '브콜'],
     prevStudyPairs: ['미키', '인치', '썬', '곤이', '피터', '하루', '그루밍', '체프', '콜린', '유조'],
