@@ -37,7 +37,7 @@ export const crewObj = {
     img: 'https://avatars.githubusercontent.com/u/67677561?v=4',
   },
   썬: {
-    isActive: true,
+    isActive: false,
     studyTrioCount: 1,
     prevMissionPairs: ['콜린', '하루', '곤이', '브콜', '디토', '파노', '피터'],
     prevStudyPairs: ['유조', '미키', '브랜', '피터', '그루밍', '카일', '도비', '크리스', '지그', '디토', '하루'],
